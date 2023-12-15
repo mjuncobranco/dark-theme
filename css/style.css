@@ -28,3 +28,34 @@
     outline: 0 none;
     list-style: none;
   }
+  body,
+div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em auto;
+}
+
+.light {
+  background-image: linear-gradient(to left, var(--white), var(--yellow));
+  color: var(--dark);
+  transition: all 1s ease-in-out;
+}
+
+.fa-solid {
+  margin-left: 35px;
+  transition: animation 1s ease-in-out;
+  
+}
+
+.dark {
+  background-image: linear-gradient(to right, var(--blue), var(--purple));
+  color: var(--white);
+  text-transform: capitalize;
+  transition: all 1s ease-in-out;
+}
+
+.turn {
+  transform: rotate(360deg);
+}
